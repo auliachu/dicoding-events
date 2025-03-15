@@ -78,6 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
+            android:text="@string/title_upcoming"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleDesc" />
@@ -220,7 +222,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/title_upcoming"
+            android:text="@string/end"
             app:layout_constraintTop_toBottomOf="@+id/beginTime_display"
             app:layout_editor_absoluteX="0dp" />
 
@@ -235,6 +237,26 @@
             app:layout_constraintStart_toEndOf="@+id/guideline6"
             app:layout_constraintTop_toBottomOf="@id/beginTime" />
 
+        <TextView
+            android:id="@+id/sisa_quota_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sisa Kuota"
+            app:layout_constraintTop_toBottomOf="@+id/endTime_display"
+            app:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/sisa_quota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/endTime" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -243,7 +265,7 @@
             android:id="@+id/buttonLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/endTime" />
+            app:layout_constraintTop_toBottomOf="@id/sisa_quota" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline6"

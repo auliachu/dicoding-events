@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
 import com.bumptech.glide.Glide
 import com.example.dicodingevents.data.response.DetailResponse
 import com.example.dicodingevents.data.response.Event
@@ -61,11 +62,14 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun displayEventDetail(result: Event?){
+        val totalQuota = (result?.quota ?: 0) - (result?.registrants ?: 0)
         binding.apply {
             Glide.with(this@DetailActivity)
                 .load(result?.mediaCover)
                 .into(imageEvent)
+            descEvent.text = HtmlCompat.fromHtml(result?.description ?: "", HtmlCompat.FROM_HTML_MODE_LEGACY)
             titleEvent.text = result?.name
+            sisaQuota.text = "${totalQuota} orang"
             summaryEvent.text = result?.summary
             textCategory.text = result?.category
             ownerName.text = result?.ownerName
