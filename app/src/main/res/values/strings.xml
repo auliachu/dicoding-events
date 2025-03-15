@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DicodingEvents</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="title_finished">Finished</string>
+    <string name="begin">Mulai</string>
+    <string name="category">Cat</string>
+    <string name="ownername">Name</string>
+    <string name="cityName">Kota</string>
+    <string name="registrant">Pendaftar</string>
+    <string name="quota">Quota</string>
+    <string name="end">Selesai</string>
+    <string name="desc">Description Event</string>
+</resources>

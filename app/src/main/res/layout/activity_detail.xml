@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_event"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/titleEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/titleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_event" />
+
+        <TextView
+            android:id="@+id/summary_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/title_upcoming"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleEvent" />
+
+        <TextView
+            android:id="@+id/titleDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/desc"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_event" />
+
+        <TextView
+            android:id="@+id/desc_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleDesc" />
+
+        <TextView
+            android:id="@+id/text_category_display"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/category"
+            app:layout_constraintTop_toBottomOf="@+id/desc_event"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="11dp" />
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/desc_event"
+            app:layout_editor_absoluteX="106dp"
+            app:layout_editor_absoluteY="11dp" />
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/text_category"
+            app:layout_editor_absoluteX="106dp"
+            app:layout_editor_absoluteY="41dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <TextView
+            android:id="@+id/ownerName_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/ownername"
+            app:layout_constraintTop_toBottomOf="@id/text_category_display"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="11dp" />
+
+        <TextView
+            android:id="@+id/cityName_display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/cityName"
+            app:layout_constraintTop_toBottomOf="@id/ownerName_display"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="11dp" />
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/ownerName"
+            app:layout_editor_absoluteX="106dp"
+            app:layout_editor_absoluteY="71dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/registrant_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/registrant"
+            app:layout_constraintTop_toBottomOf="@id/cityName_display"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="11dp" />
+
+        <TextView
+            android:id="@+id/registrant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/cityName" />
+
+        <TextView
+            android:id="@+id/quota_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/quota"
+            app:layout_constraintTop_toBottomOf="@+id/registrant_display"
+            app:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/quota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/registrant" />
+
+        <TextView
+            android:id="@+id/beginTime_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/begin"
+            app:layout_constraintTop_toBottomOf="@+id/quota_display"
+            app:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/beginTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/begin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/quota"
+            app:layout_editor_absoluteX="106dp" />
+
+        <TextView
+            android:id="@+id/endTime_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_upcoming"
+            app:layout_constraintTop_toBottomOf="@+id/beginTime_display"
+            app:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/beginTime" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:id="@+id/buttonLink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/endTime" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="68dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

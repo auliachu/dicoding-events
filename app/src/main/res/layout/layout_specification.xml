@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_category_display"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="11dp" />
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="11dp" />
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Owner Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/ownerName_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/cityName_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="71dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="71dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/registrant_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="101dp" />
+
+    <TextView
+        android:id="@+id/registrant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="101dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <TextView
+        android:id="@+id/quota_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/quota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="131dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/beginTime_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/beginTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/endTime_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_editor_absoluteX="106dp"
+        app:layout_editor_absoluteY="191dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="6dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="83dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
