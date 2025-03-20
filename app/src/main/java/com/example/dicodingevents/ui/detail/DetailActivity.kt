@@ -17,8 +17,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DetailActivity : AppCompatActivity() {
+class DetailActivity  : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
+    private var isBookmarked : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +29,12 @@ class DetailActivity : AppCompatActivity() {
         val eventId = intent.getStringExtra(EXTRA_EVENT_ID)
         if(eventId != null){
             fetchEventDetail(eventId)
+
         } else {
             Toast.makeText(this, "Event ID tidak ditemukan", Toast.LENGTH_SHORT).show()
         }
     }
+
 
     private fun fetchEventDetail(eventId: String){
         showLoading(true)
